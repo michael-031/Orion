@@ -46,9 +46,15 @@ jobs:
         run: |
           if [ -n "$KEYSTORE_BASE64" ] && [ -n "$KEYSTORE_PASSWORD" ] && [ -n "$KEY_ALIAS" ] && [ -n "$KEY_PASSWORD" ]; then
             KEYSTORE_FILE="$RUNNER_TEMP/release.jks"
-            printf '%s' "$KEYSTORE_BASE64" | tr -d '\r\n ' | base64 --decode > "$KEYSTORE_FILE"
-            echo "KEYSTORE_PATH=$KEYSTORE_FILE" >> "$GITHUB_ENV"
-            echo "HAS_SIGNING=true" >> "$GITHUB_ENV"
+            if printf '%s' "$KEYSTORE_BASE64" | tr -d '\r\n ' | base64 --decode > "$KEYSTORE_FILE" &&
+              keytool -list -keystore "$KEYSTORE_FILE" -storepass "$KEYSTORE_PASSWORD" -keypass "$KEY_PASSWORD" -alias "$KEY_ALIAS" >/dev/null 2>&1; then
+              echo "KEYSTORE_PATH=$KEYSTORE_FILE" >> "$GITHUB_ENV"
+              echo "HAS_SIGNING=true" >> "$GITHUB_ENV"
+            else
+              rm -f "$KEYSTORE_FILE"
+              echo "::warning::Release signing credentials are invalid or incomplete; building unsigned artifacts."
+              echo "HAS_SIGNING=false" >> "$GITHUB_ENV"
+            fi
           else
             echo "HAS_SIGNING=false" >> "$GITHUB_ENV"
           fi
