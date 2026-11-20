@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Orion</string>
+    <string name="status_active">ACTIVE</string>
+    <string name="status_starting">STARTING</string>
+    <string name="status_inactive">INACTIVE</string>
+    <string name="status_error">ERROR</string>
+
+    <string name="subtitle_inactive">Wi-Fi Direct • Mobile Data Bridge</string>
+    <string name="subtitle_starting">Initializing Wi-Fi Direct group…</string>
+    <string name="subtitle_active_format">Proxy listening on %1$s:%2$d</string>
+
+    <string name="action_start_proxy">Start Orion</string>
+    <string name="action_stop_proxy">Stop Orion</string>
+    <string name="action_starting">Starting…</string>
+
+    <string name="label_ssid">NETWORK SSID</string>
+    <string name="label_password">PASSPHRASE</string>
+    <string name="label_proxy_ip">PROXY IP</string>
+    <string name="label_proxy_port">PORT</string>
+    <string name="label_active_connections">CONNECTIONS</string>
+    <string name="label_data_transferred">TRANSFERRED</string>
+    <string name="label_tx_rx_format">↑ %1$s  ↓ %2$s</string>
+    <string name="value_not_active">Not broadcasting</string>
+    <string name="value_waiting_group">Negotiating…</string>
+
+    <string name="card_permissions_title">Wi-Fi Direct Access Needed</string>
+    <string name="card_permissions_badge">REQUIRED</string>
+    <string name="card_permissions_body">Grant Nearby Wi-Fi Devices and notification permissions so Orion can create a Wi-Fi Direct group and run persistently.</string>
+    <string name="btn_grant_permissions">Grant Access</string>
+    <string name="btn_app_settings">App Settings</string>
+
+    <string name="card_battery_title">Background Priority Needed</string>
+    <string name="card_battery_badge">RECOMMENDED</string>
+    <string name="card_battery_body">Disable battery optimization for Orion so screen-off proxy tunneling stays uninterrupted.</string>
+    <string name="btn_dismiss">Dismiss</string>
+    <string name="btn_battery_settings">Battery Settings</string>
+
+    <string name="qs_tile_label">Orion</string>
+    <string name="qs_tile_subtitle_inactive">Off</string>
+    <string name="qs_tile_subtitle_starting">Starting…</string>
+    <string name="qs_tile_subtitle_active">8282 • Active</string>
+    <string name="btn_add_qs_tile">Add Quick Tile</string>
+
+    <string name="help_sheet_title">Windows Proxy Setup</string>
+    <string name="help_step_1_title">1. Connect to Wi-Fi Direct</string>
+    <string name="help_step_1_body">On your Windows laptop, open Wi-Fi networks and join the DIRECT-… SSID using the passphrase shown in Orion.</string>
+    <string name="help_step_2_title">2. Configure Manual Proxy</string>
+    <string name="help_step_2_body">Open Settings → Network &amp; internet → Proxy → Manual proxy setup → Set up, then turn Use a proxy server On.</string>
+    <string name="help_step_3_title">3. Enter IP &amp; Port</string>
+    <string name="help_step_3_body">Set Proxy IP address to 192.168.49.1 and Port to 8282, then click Save. Both HTTP and HTTPS (CONNECT) traffic will tunnel over mobile data.</string>
+    <string name="help_qs_section_title">Quick Settings Switch</string>
+    <string name="help_qs_section_body">Toggle Orion directly from Android Quick Settings without opening the app.</string>
+    <string name="help_close">Done</string>
+
+    <string name="copied_format">%1$s copied to clipboard</string>
+    <string name="qs_tile_added_msg">Orion tile added to Quick Settings</string>
+    <string name="qs_tile_exists_msg">Orion tile is already in Quick Settings</string>
+    <string name="qs_tile_manual_msg">Swipe down Quick Settings, tap Edit, and drag Orion into your tiles</string>
+
+    <string name="notif_channel_name">Orion Proxy Service</string>
+    <string name="notif_channel_desc">Keeps Wi-Fi Direct hotspot and local HTTP/HTTPS proxy running while the screen is off.</string>
+    <string name="notif_title_active">Orion Active</string>
+    <string name="notif_title_starting">Starting Orion…</string>
+    <string name="notif_text_format">SSID: %1$s • %2$s:%3$d</string>
+    <string name="notif_action_stop">Stop</string>
+
+    <string name="cd_copy_ssid">Copy network SSID</string>
+    <string name="cd_copy_password">Copy Wi-Fi passphrase</string>
+    <string name="cd_toggle_password">Toggle passphrase visibility</string>
+    <string name="cd_copy_ip">Copy proxy IP address</string>
+    <string name="cd_copy_port">Copy proxy port</string>
+    <string name="cd_help">Windows proxy setup guide</string>
+    <string name="cd_quick_tile">Add Quick Settings tile</string>
+    <string name="cd_toggle_proxy">Start or stop Orion</string>
+    <string name="cd_edit_credentials">Edit hotspot SSID and passphrase</string>
+    <string name="cd_generate_password">Generate random passphrase</string>
+
+    <string name="btn_edit">Edit</string>
+    <string name="badge_custom_config">CUSTOM</string>
+    <string name="badge_auto_config">AUTO</string>
+    <string name="edit_creds_title">Hotspot Credentials</string>
+    <string name="edit_creds_prefix_note">Android Wi-Fi Direct requires the \"DIRECT-\" prefix on non-rooted devices. You can customize both the 2-character tag (replacing \"Vh\") and the network name.</string>
+    <string name="edit_creds_legacy_note">Custom Wi-Fi Direct SSID and passphrase require Android 10 (API 29) or newer. This device will use system-generated credentials.</string>
+    <string name="edit_creds_preview_label">BROADCAST SSID PREVIEW</string>
+    <string name="edit_creds_tag_label">2-Char Tag</string>
+    <string name="edit_creds_name_label">Network Name</string>
+    <string name="edit_creds_passphrase_label">WPA2 Passphrase (8–63 chars)</string>
+    <string name="edit_creds_btn_auto">Use Auto</string>
+    <string name="edit_creds_btn_save">Save</string>
+    <string name="edit_creds_btn_save_apply">Save &amp; Apply</string>
+    <string name="creds_saved_msg">Custom SSID &amp; passphrase saved</string>
+    <string name="creds_saved_restarting_msg">Saved — applying new SSID &amp; passphrase…</string>
+    <string name="creds_reset_auto_msg">Switched back to system-generated credentials</string>
+    <string name="creds_reset_restarting_msg">Reverting to auto credentials…</string>
+
+    <string name="label_wifi_band">FREQUENCY BAND</string>
+    <string name="band_24_label">2.4 GHz</string>
+    <string name="band_24_sub">Wider range</string>
+    <string name="band_5_label">5 GHz</string>
+    <string name="band_5_sub">Max speed</string>
+    <string name="band_5_unsupported">5 GHz requires Android 10+ and dual-band Wi-Fi hardware</string>
+    <string name="band_switched_msg">Band set to %1$s</string>
+    <string name="band_switched_restarting_msg">Switching hotspot to %1$s…</string>
+</resources>

@@ -1,0 +1,33 @@
+# Gradle & Kotlin
+.gradle/
+.kotlin/
+/build
+*/build
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+.externalNativeBuild
+.cxx
+/captures
+
+# IntelliJ / Android Studio
+*.iml
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/deploymentTargetSelector.xml
+
+# Local configuration & signing keys
+local.properties
+keystore.properties
+*.jks
+*.keystore
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <!-- Left outer sweeping horn -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7.8,12.2 C4.2,12.4 1.6,10.2 1.8,6.2 C2.0,5.2 2.4,4.8 2.8,5.4 C3.2,7.6 5.0,9.4 8.0,9.6 Z" />
+    <!-- Right outer sweeping horn -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16.2,12.2 C19.8,12.4 22.4,10.2 22.2,6.2 C22.0,5.2 21.6,4.8 21.2,5.4 C20.8,7.6 19.0,9.4 16.0,9.6 Z" />
+    <!-- Left inner tall horn -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8.6,10.0 C7.2,7.5 6.8,4.6 7.5,2.2 C7.7,1.7 8.1,1.8 8.3,2.5 C8.8,5.0 9.8,7.2 11.4,8.9 Z" />
+    <!-- Right inner tall horn -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15.4,10.0 C16.8,7.5 17.2,4.6 16.5,2.2 C16.3,1.7 15.9,1.8 15.7,2.5 C15.2,5.0 14.2,7.2 12.6,8.9 Z" />
+    <!-- Centaur warrior helmet with T-visor cutout -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M12,8.6 C14.5,8.6 16.5,10.2 16.6,12.5 L16.0,17.8 C15.8,19.4 14.1,21.0 12.0,21.8 C9.9,21.0 8.2,19.4 8.0,17.8 L7.4,12.5 C7.5,10.2 9.5,8.6 12,8.6 Z M8.7,12.8 L11.3,13.7 L12.0,14.0 L12.7,13.7 L15.3,12.8 L14.9,14.4 L12.75,14.9 L12.75,20.6 L11.25,20.6 L11.25,14.9 L9.1,14.4 Z" />
+</vector>
